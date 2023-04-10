@@ -87,25 +87,48 @@ def story_line choice
 end
 
 
-# puts ' "Goood!" says the greeter. "You may proceed" '
-# puts ' As you move forward, you see Kanye and Pete Davidson arguing '
-# puts ' Kanye says "I got a bag of resources for you. Because Kanye loves Kanye" '
-# puts ' Pete Davidson says "Or if you want a bag of resources that is not over-rated, you can choose me, like Kim did" '
-
 
 # Intro:
 
 p 'Welcome to Mount Dew. Do you dare try to climb?'
+p '1 = yes, 2 = no.'
+selection = gets.chomp 
+
+if selection == "1"
+    puts  "'Goood! You may proceed'\n\t"
+    puts " As you move forward, you see Kanye and Pete Davidson arguing\n "
+    
+    
+elsif selection == "2"
+    
+    puts 'See ya later!'
+    
+else 
+    puts "shrek"
+end
+
+puts " Kanye says 'I got a bag of resources for you. Because Kanye loves Kanye'\n "
+puts " Pete Davidson says 'Or if you want a bag of resources that is not over-rated, you can choose me, like Kim did'\n "
+p '1 = Kanye, 2 = Pete.'
 
 selection = gets.chomp 
 
 if selection == "1"
-    p story_line "1"
-elsif selection == "2"
-    p story_line "2"
+    puts "You get Kanye's used napkin, half eaten bag of magic Doritos, and Yeezy hiking boots"
+    puts "After you finish the Doritos you realize that they gave you the power to have Morgan Freeman's voice"
+    
 else 
-    p story_line "?"
+    puts "You get a pic of Kim K, half-eaten PBJ, and a rope"
+    puts "After eating the PB&J, you realize you are 4 foot 10 inches tall"
+    # Pic of Kim K, half-eaten PBJ (gives you special power where you temporarily gain Samuel L Jackson's Voice), rope
+    
+    
+    puts "As you continue on your journey you get lost, you hear a rustling in the bushes, out pops Danny DeVito and he informs you that there is a secret society of short people, and they have two maps. "
+
+    puts "Map 1 will takes you down through the swamp. Map 2 takes you "
+
+    
+    selection = gets.chomp 
 end
 
-p 'this continues'
 
